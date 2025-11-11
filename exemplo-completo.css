@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com gradiente */
+.cabecalho {
+    background-color: #2c3e50;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cabecalho h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Seção Hero com imagem de fundo */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1200');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Overlay escuro sobre a imagem */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn-destaque {
+    background-color: #e74c3c;
+    background-image: linear-gradient(to right, #e74c3c, #c0392b);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn-destaque:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de conteúdo */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-1 {
+    background-color: #3498db;
+    background-image: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.card-2 {
+    background-color: #2ecc71;
+    background-image: 
+        linear-gradient(rgba(46, 204, 113, 0.8), rgba(46, 204, 113, 0.8)),
+        url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="20" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: auto, 60px 60px;
+    background-position: center, 0 0;
+}
+
+.card-3 {
+    background-image: 
+        radial-gradient(circle, rgba(155, 89, 182, 0.9), rgba(142, 68, 173, 0.9)),
+        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600');
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #34495e;
+    background-image: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
