@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,11 +53,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         .caixa-multiplas {
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=800');
             height: 250px;
@@ -69,35 +70,40 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Exemplo: background-image</h1>
-    
-    <div class="exemplo">
-        <h2>Gradiente Linear</h2>
-        <div class="caixa-gradiente-linear">
-            <h3>linear-gradient(to right, #ff7e5f, #feb47b)</h3>
+    <header>
+        <h1>Exemplo: background-image</h1>
+    </header>
+    <main>
+        <div class="exemplo">
+            <h2>Gradiente Linear</h2>
+            <div class="caixa-gradiente-linear">
+                <h3>linear-gradient(to right, #ff7e5f, #feb47b)</h3>
+            </div>
         </div>
-    </div>
 
-    <div class="exemplo">
-        <h2>Gradiente Radial</h2>
-        <div class="caixa-gradiente-radial">
-            <h3>radial-gradient(circle, #667eea, #764ba2)</h3>
+        <div class="exemplo">
+            <h2>Gradiente Radial</h2>
+            <div class="caixa-gradiente-radial">
+                <h3>radial-gradient(circle, #667eea, #764ba2)</h3>
+            </div>
         </div>
-    </div>
 
-    <div class="exemplo">
-        <h2>Imagem URL</h2>
-        <div class="caixa-url">
-            <h3>background-image: url('...')</h3>
+        <div class="exemplo">
+            <h2>Imagem URL</h2>
+            <div class="caixa-url">
+                <h3>background-image: url('...')</h3>
+            </div>
         </div>
-    </div>
 
-    <div class="exemplo">
-        <h2>Múltiplas Imagens (Gradiente + URL)</h2>
-        <div class="caixa-multiplas">
-            <h3>Overlay + Imagem de Fundo</h3>
+        <div class="exemplo">
+            <h2>Múltiplas Imagens (Gradiente + URL)</h2>
+            <div class="caixa-multiplas">
+                <h3>Overlay + Imagem de Fundo</h3>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
+
 </html>

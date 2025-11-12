@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,45 +70,50 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Exemplo: background-size</h1>
-    
-    <div class="container">
-        <div class="caixa caixa-cover">
-            <div class="label">background-size: cover;</div>
+    <header>
+        <h1>Exemplo: background-size</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="caixa caixa-cover">
+                <div class="label">background-size: cover;</div>
+            </div>
+
+            <div class="caixa caixa-contain">
+                <div class="label">background-size: contain;</div>
+            </div>
+
+            <div class="caixa caixa-auto">
+                <div class="label">background-size: auto;</div>
+            </div>
+
+            <div class="caixa caixa-pixels">
+                <div class="label">background-size: 200px 150px;</div>
+            </div>
+
+            <div class="caixa caixa-percentual">
+                <div class="label">background-size: 50% 50%;</div>
+            </div>
+
+            <div class="caixa caixa-100">
+                <div class="label">background-size: 100% 100%;</div>
+            </div>
         </div>
 
-        <div class="caixa caixa-contain">
-            <div class="label">background-size: contain;</div>
+        <div style="margin-top: 30px; padding: 20px; background-color: white; border-radius: 5px;">
+            <h2>Explicação:</h2>
+            <ul>
+                <li><strong>cover:</strong> A imagem cobre toda a área (pode cortar partes)</li>
+                <li><strong>contain:</strong> A imagem cabe completamente (pode sobrar espaço)</li>
+                <li><strong>auto:</strong> Mantém o tamanho original da imagem</li>
+                <li><strong>200px 150px:</strong> Define largura e altura específicas</li>
+                <li><strong>50% 50%:</strong> Usa porcentagem do container</li>
+                <li><strong>100% 100%:</strong> Estica a imagem para preencher todo o espaço</li>
+            </ul>
         </div>
-
-        <div class="caixa caixa-auto">
-            <div class="label">background-size: auto;</div>
-        </div>
-
-        <div class="caixa caixa-pixels">
-            <div class="label">background-size: 200px 150px;</div>
-        </div>
-
-        <div class="caixa caixa-percentual">
-            <div class="label">background-size: 50% 50%;</div>
-        </div>
-
-        <div class="caixa caixa-100">
-            <div class="label">background-size: 100% 100%;</div>
-        </div>
-    </div>
-
-    <div style="margin-top: 30px; padding: 20px; background-color: white; border-radius: 5px;">
-        <h2>Explicação:</h2>
-        <ul>
-            <li><strong>cover:</strong> A imagem cobre toda a área (pode cortar partes)</li>
-            <li><strong>contain:</strong> A imagem cabe completamente (pode sobrar espaço)</li>
-            <li><strong>auto:</strong> Mantém o tamanho original da imagem</li>
-            <li><strong>200px 150px:</strong> Define largura e altura específicas</li>
-            <li><strong>50% 50%:</strong> Usa porcentagem do container</li>
-            <li><strong>100% 100%:</strong> Estica a imagem para preencher todo o espaço</li>
-        </ul>
-    </div>
+    </main>
 </body>
+
 </html>

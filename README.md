@@ -13,7 +13,8 @@
 
 ## Introdução
 
-As propriedades de background em CSS 3 permitem estilizar o fundo dos elementos HTML de diversas formas. Neste tutorial, vamos aprender sobre as principais propriedades: `background-color`, `background-image`, `background-size` e `background-position`.
+As propriedades de background em CSS 3 permitem estilizar o fundo dos elementos HTML de diversas formas.
+Neste tutorial, vamos aprender sobre as principais propriedades: `background-color`, `background-image`, `background-size` e `background-position`.
 
 Cada seção contém explicações e exemplos práticos para você começar a utilizar essas propriedades em seus projetos.
 
@@ -23,12 +24,12 @@ Cada seção contém explicações e exemplos práticos para você começar a ut
 
 A propriedade `background-color` define a cor de fundo de um elemento. Você pode usar nomes de cores, valores hexadecimais, RGB, RGBA, HSL ou HSLA.
 
-### Sintaxe
+**Sintaxe**
 ```css
 background-color: valor;
 ```
 
-### Exemplos de código
+[Exemplos de código](exemplos/background-color.html)
 
 **HTML:**
 ```html
@@ -71,7 +72,7 @@ background-color: valor;
 }
 ```
 
-### Valores comuns:
+**Valores comuns**:
 - **Nomes de cores:** `red`, `blue`, `green`, `yellow`, etc.
 - **Hexadecimal:** `#FF0000`, `#00FF00`, `#0000FF`
 - **RGB:** `rgb(255, 0, 0)`
@@ -83,12 +84,12 @@ background-color: valor;
 
 A propriedade `background-image` permite adicionar uma ou mais imagens como fundo de um elemento.
 
-### Sintaxe
+**Sintaxe**
 ```css
 background-image: url('caminho/para/imagem.jpg');
 ```
 
-### Exemplos de código
+[Exemplos de código](exemplos/background-image.html)
 
 **HTML:**
 ```html
@@ -127,7 +128,7 @@ background-image: url('caminho/para/imagem.jpg');
 }
 ```
 
-### Opções:
+**Opções**:
 - **URL de imagem:** `url('foto.jpg')`
 - **Gradiente linear:** `linear-gradient(direção, cor1, cor2)`
 - **Gradiente radial:** `radial-gradient(forma, cor1, cor2)`
@@ -139,12 +140,12 @@ background-image: url('caminho/para/imagem.jpg');
 
 A propriedade `background-size` controla o tamanho da imagem de fundo.
 
-### Sintaxe
+**Sintaxe**
 ```css
 background-size: largura altura;
 ```
 
-### Exemplos de código
+[Exemplos de código](exemplos/)
 
 **HTML:**
 ```html
