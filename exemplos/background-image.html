@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02 - background-image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #333;
+        }
+
+        .caixa-gradiente-linear {
+            background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+            height: 200px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .caixa-gradiente-radial {
+            background-image: radial-gradient(circle, #667eea, #764ba2);
+            height: 200px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .caixa-url {
+            background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=800');
+            height: 300px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .caixa-multiplas {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=800');
+            height: 250px;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo: background-image</h1>
+    </header>
+    <main>
+        <div class="exemplo">
+            <h2>Gradiente Linear</h2>
+            <div class="caixa-gradiente-linear">
+                <h3>linear-gradient(to right, #ff7e5f, #feb47b)</h3>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h2>Gradiente Radial</h2>
+            <div class="caixa-gradiente-radial">
+                <h3>radial-gradient(circle, #667eea, #764ba2)</h3>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h2>Imagem URL</h2>
+            <div class="caixa-url">
+                <h3>background-image: url('...')</h3>
+            </div>
+        </div>
+
+        <div class="exemplo">
+            <h2>Múltiplas Imagens (Gradiente + URL)</h2>
+            <div class="caixa-multiplas">
+                <h3>Overlay + Imagem de Fundo</h3>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
