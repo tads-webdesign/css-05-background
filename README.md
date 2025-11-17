@@ -145,7 +145,7 @@ A propriedade `background-size` controla o tamanho da imagem de fundo.
 background-size: largura altura;
 ```
 
-[Exemplos de código](exemplos/)
+[Exemplos de código](exemplos/background-size.html)
 
 **HTML:**
 ```html
@@ -270,6 +270,8 @@ background-position: posição-x posição-y;
 ## Exemplo Completo
 
 Agora vamos criar um exemplo completo que utiliza todas as propriedades aprendidas.
+
+[Exemplo completo](index.html)
 
 **HTML (index.html):**
 ```html
